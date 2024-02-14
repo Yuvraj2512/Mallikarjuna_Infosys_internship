@@ -1,0 +1,45 @@
+1. Write a python program to find out biggest value among two numbers
+print("Enter Two Numbers: ")
+numOne = int(input())
+numTwo = int(input())
+
+if numOne>numTwo:
+    print("\nLargest Number =", numOne)
+else:
+    print("\nLargest Number =", numTwo)
+
+2. Write a python program to find out the given number is even or odd
+num = int(input("Enter a number: "))
+if (num % 2) == 0:
+   print("{0} is Even".format(num))
+else:
+   print("{0} is Odd".format(num))
+
+3.write a python programme to accept student number, name and marks in 3 subjects. calculate total and average. print the student result based on the below conditions.
+if avg>=75 result is Distinction
+if avg>=60 result is first class
+if avg>=50 result is Second class
+if avg>=35 result is Third Class otherwise result is Fail
+
+student_number = int(input("Enter student number: "))
+student_name = input("Enter student name: ")
+subject1 = float(input("Enter marks for subject 1: "))
+subject2 = float(input("Enter marks for subject 2: "))
+subject3 = float(input("Enter marks for subject 3: "))
+total_marks = subject1 + subject2 + subject3
+average_marks = total_marks / 3
+if average_marks >= 75:
+    result = "Distinction"
+elif average_marks >= 60:
+    result = "First Class"
+elif average_marks >= 50:
+    result = "Second Class"
+elif average_marks >= 35:
+    result = "Third Class"
+else:
+    result = "Fail"
+print("\nStudent Number:", student_number)
+print("Student Name:", student_name)
+print("Total Marks:", total_marks)
+print("Average Marks:", average_marks)
+print("Result:", result)
